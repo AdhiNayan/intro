@@ -1,37 +1,55 @@
+*{
+    margin: 0;
+    padding: 0;
+}
 nav{
     background-color: rgb(60, 66, 66);
-    padding: 5%;
+    padding: 1.5rem;
+    text-decoration: none;
+}
+#m_port{
+    color: aqua;
+}
+a{
     text-decoration: none;
 }
 p{
-    color: aqua;
+    
     display: inline;
     padding: 15px;
+    font-size: 1.2rem;
+    font-family: Comic sans MS;
+    text-align: center;
 }
 .nav{
+    font-size: 0.5rem;
+    color: aqua;
     float: right;
     text-align: center;
 }
 .pp{
+    padding-top: 1rem;
     margin-top: 15%;
-    width: 200px;
+    width: 12rem;
     border-radius: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
 }
 .background {
-    background-image: url("relative/background.jpg");
+    background-image: url("relative/bg.jpg");
+    background-attachment: fixed;
     background-color: #000000;
-    height: 300px;
+    height: 350px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
     position: relative;
   }
   
-  .bgtext {
-      font-size: 20%;
+.bgtext {
+    padding-top: 1rem;
+    font-size: 20%;
     font-family: Comic sans MS;
     text-align: center;
     position: absolute;
@@ -39,4 +57,71 @@ p{
     left: 50%;
     transform: translate(-50%, -50%);
     color: white;
+}
+.icon{
+    padding-top: 1rem;
+    width: 2rem;
+}
+h2{
+    font-size: 2rem;
+    font-family: Comic sans MS;
+    text-align: center;
+}
+#a_bg{
+    background-color: rgb(60, 66, 66);
+    padding: 3rem;
+}
+#about{
+    color: aqua;
+    padding-bottom: 2rem;
+}
+.about{
+    color: aliceblue;
+}
+#q_bg{
+    padding: 3rem;
+    background-image: url("relative/bg.jpg");
+    background-attachment: fixed;
+    background-color: #000000;
+    height: 350px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+}
+#qualification{
+    color: aliceblue;
+    padding-bottom: 2rem;
+}
+.qualification{
+    color:#000000;
+    size: 2rem;
+    font-family: Comic sans MS;
+}
+details {
+    font: 16px "Open Sans", Calibri, sans-serif;
+    width: 620px;
+    padding: .5rem;
+  }
+  
+  details > summary {
+    padding: 2px 6px;
+    width: 7em;
+    background-color: aliceblue;
+    border: none;
+    box-shadow: 3px 3px 4px black;
+    cursor: pointer;
+  }
+  
+  details > p {
+    border-radius: 0 0 10px 10px;
+    background-color: aliceblue;
+    padding: 2px 6px;
+    margin: 0;
+    box-shadow: 3px 3px 4px black;
+  }
+  
+  details[open] > summary {
+    border-radius: 0 0 10px 10px;
+    background-color: aliceblue;
   }
