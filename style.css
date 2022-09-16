@@ -61,29 +61,30 @@ p{
 .icon{
     padding-top: 1rem;
     width: 2rem;
+    filter: invert(80%);
 }
 h2{
     font-size: 2rem;
     font-family: Comic sans MS;
     text-align: center;
 }
-#a_bg{
+#a_bg, .s_bg{
     background-color: rgb(60, 66, 66);
     padding: 3rem;
 }
-#about{
+#about, #skills{
     color: aqua;
     padding-bottom: 2rem;
 }
-.about{
+.about, .skills{
     color: aliceblue;
 }
-#q_bg{
+.q_bg{
     padding: 3rem;
     background-image: url("relative/bg.jpg");
     background-attachment: fixed;
     background-color: #000000;
-    height: 350px;
+    height: 180px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -91,12 +92,17 @@ h2{
 }
 #qualification{
     color: aliceblue;
-    padding-bottom: 2rem;
+    padding-bottom: 3rem;
 }
 .qualification{
     color:#000000;
     size: 2rem;
     font-family: Comic sans MS;
+    display: inline-block;
+}
+.quali{
+    display: flex;
+    padding: 0 20% 5% 20%;
 }
 details {
     font: 16px "Open Sans", Calibri, sans-serif;
@@ -105,8 +111,9 @@ details {
   }
   
   details > summary {
+    border-radius: 0 10px 0 10px;
     padding: 2px 6px;
-    width: 7em;
+    width: 7rem;
     background-color: aliceblue;
     border: none;
     box-shadow: 3px 3px 4px black;
@@ -122,6 +129,6 @@ details {
   }
   
   details[open] > summary {
-    border-radius: 0 0 10px 10px;
+    border-radius: 10px 10px 0 0;
     background-color: aliceblue;
   }
